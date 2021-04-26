@@ -15,6 +15,10 @@ listForm.addEventListener("submit", (e) => {
   listInput.value = "";
 });
 
+listForm.addEventListener( {
+
+});
+
 function todoList(items) {
   let list = document.createElement("ul");
   items.forEach((item) => {
