@@ -19,20 +19,43 @@
     width: 100%;
   }
 
+  
+body::-webkit-scrollbar-track {
+  background: rgb(54, 53, 53);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: blueviolet;
+}
+
   header {
     background-color: blueviolet;
-    height: 100%;
+
   }
 
   nav {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
     height: 100%;
   }
 
-  .dropdown-content {
-    display: none;
+  .nav-link {
+    display: inline-block;
+    padding: 0rem 5rem;
   }
+
+  .logo {
+    margin-right: 2rem;
+    margin-left: auto;
+  }
+
 
   .logo img {
     width: auto;
@@ -47,8 +70,18 @@
      background-color: darkgray;
   }
 
-  #list-root {
+  .list-root-container {
     background-color: aquamarine;
+  }
+
+  #list-days{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #list-days li{
+    
   }
 
   #app-root {
