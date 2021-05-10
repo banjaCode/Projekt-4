@@ -66,22 +66,20 @@ body::-webkit-scrollbar-thumb {
 
   main {
      display: grid;
-     grid-template: 200vh / 0.75fr 1.25fr;
+     grid-template: 200vh / 1fr 4fr;
      background-color: darkgray;
   }
 
   .list-root-container {
+    display: grid;
+    grid-template: 2rem 1fr / repeat(7, 1fr);
     background-color: aquamarine;
   }
 
-  #list-days{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
 
-  #list-days li{
-    
+  .list-root {
+    word-wrap: break-word;
+    padding: 1rem 1rem;
   }
 
   #app-root {
@@ -90,4 +88,8 @@ body::-webkit-scrollbar-thumb {
 
   footer {
     background-color: rgb(2, 7, 5);
+  }
+
+  .invisible {
+    display: none;
   }
