@@ -4,7 +4,6 @@
   * {
     list-style-type: none;
     text-decoration: none;
-    list-style-type: none;
     font-family: "roboto";
     font-size: 1.3vw;
     margin: 0%;
@@ -14,7 +13,7 @@
 
   body {
     display: grid;
-    grid-template: 6rem 1fr 3rem / 1fr;
+    grid-template: 18vh 1fr 10vh / 1fr;
     height: 100%;
     width: 100%;
   }
@@ -66,8 +65,9 @@ body::-webkit-scrollbar-thumb {
 
   main {
      display: grid;
-     grid-template: 200vh / 1fr 4fr;
+     grid-template: 1fr / 1fr 4fr;
      background-color: darkgray;
+     min-height: 72vh;
   }
 
   .list-root-container {
@@ -78,8 +78,17 @@ body::-webkit-scrollbar-thumb {
 
 
   .list-root {
+    border-left: 0.01rem solid;
     word-wrap: break-word;
-    padding: 1rem 1rem;
+    padding: 0.45rem 0.45rem;
+    background-color: #e5e5e5;
+    grid-auto-rows: 100px;
+  }
+
+  .list-root li {
+    margin-bottom: 0.5rem;
+    list-style-position: inside; 
+    list-style-type: decimal;
   }
 
   #app-root {
@@ -87,7 +96,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   footer {
-    background-color: rgb(2, 7, 5);
+    background-color: chartreuse;
   }
 
   .invisible {
